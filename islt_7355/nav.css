@@ -1,8 +1,8 @@
 nav{margin-top: 2rem;
 margin-bottom: 5rem;
 height: 3rem;
-border-bottom: 1px solid black;
-}
+border-bottom: 1px solid black;}
+
 
 nav ul {list-style-type: none;
         margin:0;
@@ -26,9 +26,12 @@ nav a {text-decoration: none;
             color: black;}
 
 nav a:link {background-color: white;
-                color: #000000;}
+                color: #000000;
+        }
 
-nav a:hover, nav a:focus { font-weight: bold;}
+nav a:hover, nav a:focus { font-weight: bold;
+        
+}
 nav a:active{ background-color: black;
                 color: white;
                     }
@@ -39,12 +42,12 @@ nav a:active{ background-color: black;
                 text-align: center;
                 font-size: 1.1rem;
                 font-family: 'Open Sans', sans-serif;
+                padding: 4.5px;  
                 }
 
-nav>ul>li:hover>ul { display: block; 
-                    
-                }
-                
+nav>ul>li:hover>ul { display: block; }
+
+      
 
 
 
