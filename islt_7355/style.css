@@ -1,1 +1,29 @@
-h1{color: #000099;}
+
+/* Styles for References page*/
+
+.references-firstline {text-indent: -3rem;}
+#maincontainer-references { width: 800px;
+                        line-height: 1.9rem;
+                    margin-bottom: 10rem;
+                    margin: auto;
+                    border:none;}
+
+#referencesheading1 {text-align: center;}
+.footermargin {margin-top: 5rem;
+                }
+#maincontainer-references p:first-child::first-letter {color: white;
+                                            font-size: 3rem;
+                                            background-color: black;
+                                         }  
+
+/* Font styles*/
+h1 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 3rem;
+    margin: 8rem 0rem 8rem;}
+h2 {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-weight: 600;}
+
