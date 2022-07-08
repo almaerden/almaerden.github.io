@@ -2,13 +2,25 @@
 /* Styles for References page*/
 
 .references-firstline {text-indent: -3rem;}
-#maincontainer-references { width: 800px;
-                        line-height: 1.9rem;
-                    margin-bottom: 10rem;
-                    margin: auto;
-                    border:none;}
+.referencesheading2{text-align: center;
+font-size: 1.8rem;}
+.resorcesheading{font-size:1.5rem;
+text-align: center;
+font-family:'Lora', serif;}
 
-#referencesheading1 {text-align: center;}
+
+#maincontainer-references { 
+    display:grid;
+    grid-area: 1fr/1fr;
+    max-width: 55%;
+    margin: 0 auto;
+    
+     line-height: 1.9rem;
+    margin-bottom: 10rem;
+    margin: auto;
+    border:none;}
+
+
 .footermargin {margin-top: 5rem;
                 }
 #maincontainer-references p:first-child::first-letter {color: white;
@@ -21,10 +33,20 @@ h1 {
     font-family: 'Lora', serif;
     text-align: center;
     font-size: 3rem;
-    margin: 8rem 0rem 8rem;}
+    margin: 6rem 0rem 5rem;}
 h2 {
         font-family: 'Lato', sans-serif;
-        text-align: center;
+        
         font-weight: 600;}
+        
+p {font-family: 'Open-Sans', sans-serif;}
 
-footer{text-align: center;}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+    
+
