@@ -9,97 +9,83 @@ Use:  This is the about.html page for the Educational website
 I am developing as the final project of the IS_LT 7355 Web design & Development course.
 Tested: 3 July 2022; Passed on Chrome and Edge
 Validation: No issues were found on the validators-->
-<link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet"  href="style.css">
 <link rel="stylesheet" href="nav.css">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>About Page</title>
 
 <style>
-    @-ms-viewport {
-    width: device-width;}
-    #about-main {
-    height: auto;
-    margin: 0rem 0rem 10rem;
+
+video {
+ width: 100%;
+height: auto; 
+padding: 5rem 0 0 2rem;  }
+
+#aboutmain{margin:0 10rem; 
+max-width: 60%;
+margin: 0 auto;}
+
+.aboutbody {display:grid;
+    grid-template-rows:  10% 10% 25% 20% 20% 5% 10%;
+    grid-template-columns: 1f;
+     height: fit-content;}
+
+.aboutnav{grid-row:1 /span1;
+grid-column: 1/ span1;}
+
+.authorheader{ grid-row:2/span1;
+grid-column: 1/span1;}
+
+.authorprofile {grid-row: 3/ span1;
+grid-column: 1/span1;}
+
+.authorinfo{ grid-row:4/span1;
+grid-column: 1/span1;
 }
-.about-content-area {
-    display: grid;
-    grid-template: repeat(4, min-content)/ 45% 55%;
-    grid-gap: 0rem;
-    height: auto;
-    margin: 0rem 5.6rem;}
 
-    .author-info-section {
-    
-    text-align: center;
-    display: flex;
-    align-items: center;
-    grid-area: 1/1/2/2;}
-
-    .author-info {
-    padding: 5rem;}
-
-    .author-photo {
-    padding: .6rem 0rem;
+.videoresume {grid-row: 5/span1;
+grid-column:1/span1;
 }
 
-.author-info>h2 {
-    font-size: 2rem;
+
+.author-resume{grid-row: 6/span 1;
+grid-column: 1/span1;
+font-size: 3rem;
+font-weight: bold;
+text-align: center;
+margin-bottom: 5rem;
+margin-top:5rem ;
 }
+
+.aboutfoot{grid-row: 7/span1;
+grid-column: 1/span2;} 
+
 blockquote{
     font-size: 1.2rem;
-}
-.intro-paragraph-section {
-    grid-area: 1/2/1/2;
-    width: auto;
-    padding: 2rem 2.5rem;
-    margin: 4rem 0rem;}
-    
-.intro-paragraph-section>p {
-    padding-top: 1rem;
-    margin-bottom: 0rem;
-    font-family: 'Open-Sans', sans-serif;}
+font-weight: bold;}
 
+.authorprofile>h2{
+    font-size: 2rem;}
 
-.justify {
+.justify{ 
     text-align: justify;
     text-justify: distribute;
     line-height: 1.5rem;
 }
-.author-video-section {
-    
-    margin: 0rem 5rem 10rem;
-    height: auto;
-    grid-area: 2/1/3/span 2;
-    text-align: center;
-    margin-bottom: 5rem;
-}
-video {
-    width: 35rem;
-    height: 25rem;
-    padding: 3rem;
-    background-color: #79ced4;
-    margin-left: 6rem;
-}
-   
-    .author-resume {
-     grid-area: 3/1/4/1;
-     font-size: 30px;
-    font-weight: bold;
-     margin-top:1rem;}
 
-    .author-resume a {text-color:black;}
-    
 
-   
-.aboutfoot {display:inline;
-        }
+blockquote{padding-right: 5rem;}
 
- </style>
+.justify{ font-family: 'Open-Sans', sans-serif;}
+
+
+</style>
 </head>
-<body>
-    <nav>
+<body id="aboutbody">
+    <nav class="aboutnav">
         <ul>
             <li> <a href="index.html">Home</a></li>
             <li> <a href="about.html">About</a></li>
@@ -117,30 +103,29 @@ video {
     <header id="authorheader">
         <h1>Educator Credentials</h1>
     </header>
-    <main id="about-main">
-        <div class="about-content-area">
-            <div class="author-info-section">
-                <div class="author-info">
+    <main>
+        <div id="aboutmain">
+            <div class="authorprofile">
                     <h2>Alma Erden</h2>
-                    <div class="author-photo">
-                        <img src="ProfilePicture.jpg" width="250px" height="300px" alt="Profile Picture">
-                    </div>
+                    
+                    <img class="profilepicture" src="ProfilePicture.jpg" width="30%" height="auto" alt="Profile Picture">
+                    
                     <blockquote><em> “Who dares to teach must never cease to learn.” 
                         -John Cotton Dana </em> </blockquote>
-                </div>
             </div>
-            <div class="intro-paragraph-section">
+            
+            <div class="authorinfo">
              <p class="justify">My name is Alma Erden. I am originally from Albania, a small European
              country. I live in Ames, a quiet city in Iowa.
-            </br>
-            </br>
+            <br>
+            <br>
             I have always been passionate about learning and education. I attended
          the University of Tirana in Albania in 2000. I earned my Bachelor of Arts
          degree in Turkish as a Second Language Specialist. Currently, I am working
          toward my Master of Science degree in Learning Technologies and Design with
          a certification in User Experience and Usability at the University of Missouri-Colombia.
-            </br>
-             </br>
+            <br>
+            <br>
          I taught Turkish as a Second Language in high schools for over ten years and held
         different administrative roles in educational settings. I feel fortunate that I had
         the opportunity to teach in three different countries: Albania, Turkey, and Kosovo.
@@ -149,22 +134,23 @@ video {
          teaching career has been to promote an <strong>inclusive</strong> learning  environment
           that encourages students' <em>academic</em> and <em>personal</em> growth.</p>  
         </div>
-        <div class="author-video-section">
-            <div class="author-media-video">
-                <video controls>
-                <Source scr="Erden-Video-Resume.mp4" type="video/mp4"/>
+        
+            <div class="videoresume">
+                <video  controls>
+                <source scr="Erden-Video-Resume.mp4" type="video/mp4"/>
                 </video>
             </div>
-            <div class="author-resume">
+       
+
+        <div class="author-resume">
                 <a href="Erden-Resume.pdf">Resume</a>
-            </div>
+        </div>
         </div>
     </main>
 
- <footer>
-    <div class="aboutfoot">
-        <p> Alma Erden  |  <a href="emailto:ae9hd@umsytem.edu">ae9hd@umsystem.edu</a>  |  +1 573-882-7256</p></div>
-    </br>
+ <footer class="aboutfoot">
+    <div><p> Alma Erden  |  <a href="emailto:ae9hd@umsytem.edu">ae9hd@umsystem.edu</a>  |  +1 573-882-7256</p></div>
+    <br>
       <div>&copy;  Copyright Alma Erden 2022</div>  
  </footer>
 </body>
