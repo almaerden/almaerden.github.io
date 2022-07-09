@@ -11,50 +11,97 @@ Tested: 3 July 2022; Passed on Chrome and Edge
 Validation: No issues were found on the validators-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <meta charset="utf-8">
                <title>Home Page</title>
+
+<style>
+#homeheader{ display:inline;}
+#homemain {display:grid;
+grid-template: 1f/1fr;
+max-width: 55%;
+margin: 0 auto;
+
+}
+
+.homecontent{grid-area: 1/1/span1/span1;}
+
+
+#welcomeparagraph{
+height:auto;
+line-height: 1.9rem;}
+
+.foot {display:inline;}
+
+.purposeheading3 {font-size: 2rem;
+    text-align: center;
+}
+.goalsol{ font-family: 'Open-Sans', sans-serif;
+line-height: 1.9rem;
+margin-bottom: 6rem;}
+
+.heading4goals { font-family: 'Open-Sans', sans-serif;}
+
+
+</style>
 </head>
 <body>
-    <nav id="navcontainer">
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="#learn.html">Learn</a>
+    <div id="navwrap">
+        <nav id="navcontainer">
+            <label id="hamburger">&#9776;</label>
             <ul>
-                <li><a href="">Link 1</a><li>
-                <li><a href="">Link 2</a></li>
-                <li><a href="">Link 3</a></li>
+                <li class="active"> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="learn.html">Learn</a>
+                    <ul class="mobilehide">
+                        <li><a href="">Link 1</a><li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                    </ul>
+                </li>
+                <li> <a href="references.html">References</a></li>
+                <li> <a href="#contact.html">Contact</a></li>
             </ul>
-            </li>
-            <li> <a href="references.html">References</a></li>
-            <li> <a href="#contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
+        </nav>
+        </div>
+
+    <header id="homeheader">
         <h1>Academic Stress among College Students</h1>
     </header>
-    <main>
-        <h3>Purpose and Goals</h3>
-        <p>Welcome to the <strong>'Academic Stress among College Students' </strong>website!<br/>
-            A resource that raises awareness among students, their families, and educators<br/>
-            about Academic Stress, its sources, and ways to cope with it. </p>
-        <p>College students represent society's investment for the future. Their well-being<br/>
-            is important not only in its own right but also as a factor contributing<br/>
-           to the larger society's well-being. Academic Stress is a serious and growing issue<br/>
-            affecting students' college careers. For some students, this type of stress is manageable<br/>
-            and even beneficial, providing needed motivation and energy; however, for others,<br/>
-            Academic Stress can become so severe that it interferes with their ability to focus<br/>
+
+    <main >
+    <div id="homemain">
+
+        <div class="homecontent">
+            <img src="purpose.jpg" width="92%" height="auto" alt="Purpose image">
+
+        <h3 class="purposeheading3">Purpose and Goals</h3>
+        <p id="welcomeparagraph">Welcome to the <strong>'Academic Stress among College Students' </strong>website!
+            A resource that raises awareness among students, their families, and educators
+            about Academic Stress, its sources, and ways to cope with it.
+            <br>
+            <br> 
+            College students represent society's investment for the future. Their well-being
+            is important not only in its own right but also as a factor contributing
+           to the larger society's well-being. Academic Stress is a serious and growing issue
+            affecting students' college careers. For some students, this type of stress is manageable
+            and even beneficial, providing needed motivation and energy; however, for others,
+            Academic Stress can become so severe that it interferes with their ability to focus
              and concentrate.</p>
-        <h4>The goals for what you can learn on this site are as follows:</h4>
-    </main>
-        <ol>
+        
+        <h4 class="heading4goals">The goals for what you can learn on this site are as follows:</h4>
+    
+        <ol class="goalsol">
             <li>Identify the sources of academic stress.</li>
             <li>Describe the signs of academic stress</li>
             <li>Describe how academic workload triggers academic stress.</li>
             <li>Recall how to cope with academic stress.</li>
         </ol>
+        </div>
+    </div>
+    </main>
  <footer>
-     <div>
+     <div class="foot">
        <p> Alma Erden  |  <a href="emailto:ae9hd@umsytem.edu">ae9hd@umsystem.edu</a>  |  +1 573-882-7256</p></div>
      <div>&copy;  Copyright Alma Erden 2022</div>   
        
