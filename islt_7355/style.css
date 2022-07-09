@@ -12,7 +12,9 @@ h2 {
         
         font-weight: 600;}
         
-p {font-family: 'Open-Sans', sans-serif;}
+p {font-family: 'Open-Sans', sans-serif;
+    font-weight: 400;
+    kerning: .2rem;}
 
 footer{
     display: flex;
@@ -26,11 +28,12 @@ footer{
 
 #homeheader{ display:inline;}
 #homemain {display:grid;
-grid-template: 1f/1fr;
+grid-template: 90%/90%;
 max-width: 55%;
 margin: 0 auto;
 
 }
+
 
 .homecontent{grid-area: 1/1/span1/span1;}
 
@@ -164,8 +167,204 @@ font-family:'Lora', serif;}
                 }
 #maincontainer-references p:first-child::first-letter {color: white;
                                             font-size: 3rem;
-                                            background-color: black;
+                                            background-color: black;      
                                          }  
+
+
+                                               /* media query for mobile 570px*/
+
+@media only screen and (max-width: 570px) {
+
+    /*universal styles*/
+
+h1 {font-size: 1.9rem;
+margin-bottom: 1rem;}
+
+h2{font-size: 1.3rem;}
+
+h3{font-size: 0.8rem;}
+
+p{font-size: 0.9rem;}
+
+body {
+    height: auto;
+    width: 100%;
+    margin: 0 ;}
+
+main{ height:auto;
+
+width:100%;
+margin:0;
+padding:0;
+
+}
+/*media query home*/
+
+#homemain {display:grid;
+    
+min-width:90%;}
+
+#welcomeparagraph{
+    height:auto;
+    line-height: 1.9rem;}
+    
+    .foot {display:inline;}
+    
+    .purposeheading3 {font-size: 1rem;
+        text-align: center;
+    }
+
+    .purposeimage{ width:55%;
+    height:auto;
+padding-left: 1rem;
+margin-left: 3rem;}
+
+    .goalsol{ font-family: 'Open-Sans', sans-serif;
+    line-height: 1.9rem;
+    margin-bottom: 4rem;
+    font-size: 0.9rem;}
+    
+    .heading4goals { font-family: 'Open-Sans', sans-serif;}
+
+
+/* mediaquery about page*/
+
+video {
+    width: 20%;
+   height: auto; 
+   padding: rem 0 0rem 0rem;  }
    
+   #aboutmain{margin:0 10rem; 
+   min-width: 80%;
+   margin: 0 auto;}
+   
+   .aboutbody {display:grid;
+       
+        height: fit-content;}
+   
+   
+
+   .author-resume a{
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+   
+   }
+   
+   .aboutfoot{grid-row: 7/span1;
+   grid-column: 1/span2;} 
+   
+   blockquote{
+       font-size: 1.2rem;
+   font-weight: bold;}
+
+   
+   .authorprofile>h2{
+       font-size: 0.9rem;}
+   
+   .justify{ 
+       text-align: justify;
+       text-justify: distribute;
+       line-height: 1.5rem;
+   }
+   .authorname-heading2{font-size:0.9rem}
+   
+   
+   blockquote{padding-right: 5rem;}
+   
+   .justify{ font-family: 'Open-Sans', sans-serif;}
+
+   /*media query learn page*/
+
+   .learnheader{display:inline;}
+
+#learnmain{ display: grid;
+
+min-width: 80%;
+margin: 0 auto;
+}
+#learnmain>p{ line-height: 1.9rem;}
+
+.ul-learngoals{list-style-type: none;
+font-family:'Open-Sans', sans-serif;
+line-height: 1.9rem;
+font-size: 0.9rem;
+}
+
+.ul-learnsigns{font-family:'Open-Sans', sans-serif;
+line-height: 1.5rem;
+font-size:0.9rem;}
+
+.introheading{text-align: center;
+font-size: 1.rem;}
+
+.image-center{padding-left: 3rem;
+margin-bottom: 5rem;
+width:70%;
+height:auto;}
+
+.learnerheader>h1{font-size: 1.rem;}
+
+.stresspresence-image {width:65%;
+height: auto;
+padding-left: 2rem;}
+
+.learn11image{ width:50%;
+              height: auto;
+            margin-left: 4rem;}
+
+
+/*media query reference page*/
+
+.references-firstline {text-indent: -3rem;}
+
+.referencesheading2{text-align: center;
+font-size: 1.8rem;
+margin-top: 3rem;}
+
+.resorcesheading{font-size:1.5rem;
+text-align: center;
+font-family:'Lora', serif;
+margin-top: 2rem;
+padding-top: 2rem;}
+
+
+#maincontainer-references { 
+    display:grid;
+    grid-area: 1fr/1fr;
+    min-width:75%;
+    margin: 0 auto;
+    padding: 4rem;
+    font-size: 0.5rem;
+    
+     line-height: 1.9rem;
+    margin-bottom: 10rem;
+    margin: auto;
+    border:none;}
+    .resourceheading { font-family:'Open-Sans', sans-serif;
+        font-size:0.9rem;}}
+
+
+.footermargin {margin-top: 5rem;
+                }
+#maincontainer-references p:first-child::first-letter {color: white;
+                                            font-size: 3rem;
+                                            background-color: black;      
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
