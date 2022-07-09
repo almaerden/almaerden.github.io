@@ -1,4 +1,143 @@
 
+
+
+/* Font styles*/
+h1 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 3rem;
+    margin: 6rem 0rem 5rem;}
+h2 {
+        font-family: 'Lato', sans-serif;
+        
+        font-weight: 600;}
+        
+p {font-family: 'Open-Sans', sans-serif;}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*styles for index page*/
+
+#homeheader{ display:inline;}
+#homemain {display:grid;
+grid-template: 1f/1fr;
+max-width: 55%;
+margin: 0 auto;
+
+}
+
+.homecontent{grid-area: 1/1/span1/span1;}
+
+
+#welcomeparagraph{
+height:auto;
+line-height: 1.9rem;}
+
+.foot {display:inline;}
+
+.purposeheading3 {font-size: 2rem;
+    text-align: center;
+}
+.goalsol{ font-family: 'Open-Sans', sans-serif;
+line-height: 1.9rem;
+margin-bottom: 6rem;}
+
+.heading4goals { font-family: 'Open-Sans', sans-serif;}
+
+/*styles for about page*/
+
+video {
+    width: 100%;
+   height: auto; 
+   padding: 5rem 0 0 2rem;  }
+   
+   #aboutmain{margin:0 10rem; 
+   max-width: 60%;
+   margin: 0 auto;}
+   
+   .aboutbody {display:grid;
+       grid-template-rows:  10% 10% 25% 20% 20% 5% 10%;
+       grid-template-columns: 1f;
+        height: fit-content;}
+   
+   .aboutnav{grid-row:1 /span1;
+   grid-column: 1/ span1;}
+   
+   .authorheader{ grid-row:2/span1;
+   grid-column: 1/span1;}
+   
+   .authorprofile {grid-row: 3/ span1;
+   grid-column: 1/span1;}
+   
+   .authorinfo{ grid-row:4/span1;
+   grid-column: 1/span1;
+   }
+   
+   .videoresume {grid-row: 5/span1;
+   grid-column:1/span1;
+   }
+   
+   
+   .author-resume{grid-row: 6/span 1;
+   grid-column: 1/span1;
+   font-size: 3rem;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 5rem;
+   margin-top:5rem ;
+   }
+   
+   .aboutfoot{grid-row: 7/span1;
+   grid-column: 1/span2;} 
+   
+   blockquote{
+       font-size: 1.2rem;
+   font-weight: bold;}
+   
+   .authorprofile>h2{
+       font-size: 2rem;}
+   
+   .justify{ 
+       text-align: justify;
+       text-justify: distribute;
+       line-height: 1.5rem;
+   }
+   
+   
+   blockquote{padding-right: 5rem;}
+   
+   .justify{ font-family: 'Open-Sans', sans-serif;}
+
+   /*styles for learn page*/
+
+.learnheader{display:inline;}
+
+#learnmain{ display: grid;
+grid-template: 1f/1fr;
+max-width: 50%;
+margin: 0 auto;
+}
+#learnmain>p{ line-height: 1.9rem;}
+
+.ul-learngoals{list-style-type: none;
+font-family:'Open-Sans', sans-serif;
+line-height: 1.9rem;}
+
+.ul-learnsigns{font-family:'Open-Sans', sans-serif;
+line-height: 1.5rem;}
+
+.introheading{text-align: center;
+font-size: 1.8rem;}
+
+.image-center{padding-left: 3rem;
+margin-bottom: 5rem;}
+
 /* Styles for References page*/
 
 .references-firstline {text-indent: -3rem;}
@@ -27,26 +166,6 @@ font-family:'Lora', serif;}
                                             font-size: 3rem;
                                             background-color: black;
                                          }  
+   
 
-/* Font styles*/
-h1 {
-    font-family: 'Lora', serif;
-    text-align: center;
-    font-size: 3rem;
-    margin: 6rem 0rem 5rem;}
-h2 {
-        font-family: 'Lato', sans-serif;
-        
-        font-weight: 600;}
-        
-p {font-family: 'Open-Sans', sans-serif;}
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-    
 
