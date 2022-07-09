@@ -11,35 +11,40 @@ Tested: 3 July 2022; Passed on Chrome and Edge
 Validation: No issues were found on the validators-->
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="nav.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
+
+
+
 <title>References Page</title>
+
 
 </head>
 <body>
     
-    <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="#learn.html">Learn</a>
+    <div id="navwrap">
+        <nav id="navcontainer">
+            <label id="hamburger">&#9776;</label>
             <ul>
-                <li><a href="">Link 1</a><li>
-                <li><a href="">Link 2</a></li>
-                <li><a href="">Link 3</a></li>
+                <li class="active"> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="learn.html">Learn</a>
+                    <ul class="mobilehide">
+                        <li><a href="">Link 1</a><li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                    </ul>
+                </li>
+                <li> <a href="references.html">References</a></li>
+                <li> <a href="#contact.html">Contact</a></li>
             </ul>
-            </li>
-            <li> <a href="references.html">References</a></li>
-            <li> <a href="#contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        </nav>
+        </div>
     
-    <header id="referencesheading1">
-        <h1>References</h1>
+    <header class="referencesheading2">
+        <h2>References</h2>
     </header>
 
-    <div class="references-heading">
-        <h2>References</h2>
-    </div>
 
     <main id="maincontainer-references">
     
@@ -110,8 +115,8 @@ Validation: No issues were found on the validators-->
         <p class="references-firstline">Wilks, S. E. (2008). Resilience amid academic stress: The moderating impact of social support 
             among social work students. <em>Advances in Social Work, 9</em>(2), 106-125. <a href="https://doi.org/10.18060/51">https://doi.org/10.18060/51</a></p>
         
-        <div class="references-heading">
-            <h2>Other Resources</h2>
+        <div class=resorcesheading>
+            <h3>Other Resources</h3>
         </div>
         <p class="references-firstline"><em>Exercise is an all-natural treatment to fight depression - Harvard Health.</em> (2013, July 17). Harvard Health; www.health.harvard.edu.
          <a href="https://www.health.harvard.edu/mind-and-mood/exercise-is-an-all-natural-treatment-to-fight-depression">
