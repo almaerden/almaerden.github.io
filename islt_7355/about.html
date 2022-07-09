@@ -13,6 +13,7 @@ Validation: No issues were found on the validators-->
 
 <link rel="stylesheet"  href="style.css">
 <link rel="stylesheet" href="nav.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 
 <title>About Page</title>
@@ -85,21 +86,24 @@ blockquote{padding-right: 5rem;}
 </style>
 </head>
 <body id="aboutbody">
-    <nav class="aboutnav">
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="#learn.html">Learn</a>
+    <div id="navwrap">
+        <nav id="navcontainer">
+            <label id="hamburger">&#9776;</label>
             <ul>
-                <li><a href="">Link 1</a><li>
-                <li><a href="">Link 2</a></li>
-                <li><a href="">Link 3</a></li>
+                <li class="active"> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="learn.html">Learn</a>
+                    <ul class="mobilehide">
+                        <li><a href="">Link 1</a><li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                    </ul>
+                </li>
+                <li> <a href="references.html">References</a></li>
+                <li> <a href="#contact.html">Contact</a></li>
             </ul>
-            </li>
-            <li> <a href="references.html">References</a></li>
-            <li> <a href="#contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        </nav>
+        </div>
     <header id="authorheader">
         <h1>Educator Credentials</h1>
     </header>
