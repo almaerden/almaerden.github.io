@@ -9,41 +9,14 @@ Use: This is the index.html page for the Educational website
 I am developing as the final project of the IS_LT 7355 Web design & Development course.
 Tested: 3 July 2022; Passed on Chrome and Edge
 Validation: No issues were found on the validators-->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="nav.css">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet"   type="text/css" href="nav.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <meta charset="utf-8">
                <title>Home Page</title>
 
-<style>
-#homeheader{ display:inline;}
-#homemain {display:grid;
-grid-template: 1f/1fr;
-max-width: 55%;
-margin: 0 auto;
 
-}
-
-.homecontent{grid-area: 1/1/span1/span1;}
-
-
-#welcomeparagraph{
-height:auto;
-line-height: 1.9rem;}
-
-.foot {display:inline;}
-
-.purposeheading3 {font-size: 2rem;
-    text-align: center;
-}
-.goalsol{ font-family: 'Open-Sans', sans-serif;
-line-height: 1.9rem;
-margin-bottom: 6rem;}
-
-.heading4goals { font-family: 'Open-Sans', sans-serif;}
-
-
-</style>
 </head>
 <body>
     <div id="navwrap">
@@ -73,7 +46,7 @@ margin-bottom: 6rem;}
     <div id="homemain">
 
         <div class="homecontent">
-            <img src="purpose.jpg" width="92%" height="auto" alt="Purpose image">
+            <img class="purposeimage" src="purpose.jpg" width="92%" height="auto" alt="Purpose image">
 
         <h3 class="purposeheading3">Purpose and Goals</h3>
         <p id="welcomeparagraph">Welcome to the <strong>'Academic Stress among College Students' </strong>website!
