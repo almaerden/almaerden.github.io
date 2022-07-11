@@ -3,6 +3,9 @@
 
 /* Font styles*/
 
+blockquote{font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;}
 
 
 h1 {
@@ -60,6 +63,7 @@ margin-bottom: 6rem;}
 .heading4goals { font-family: 'Open-Sans', sans-serif;}
 
 /*styles for about page*/
+.print-education {display:none;}
 
 video {
     width: 100%;
@@ -234,6 +238,7 @@ margin-left: 3rem;}
 
 
 /* mediaquery about page*/
+.print-education {display: none;}
 
 video {
     width: 70%;
@@ -260,10 +265,6 @@ video {
    .aboutfoot{grid-row: 7/span1;
    grid-column: 1/span2;} 
    
-   blockquote{
-       font-size: 1.2rem;
-   font-weight: bold;}
-
    
    .authorprofile>h2{
        font-size: 0.9rem;}
@@ -355,22 +356,55 @@ padding-top: 2rem;}
                 }
 #maincontainer-references p:first-child::first-letter {color: white;
                                             font-size: 3rem;
-                                            background-color: black;      
+                                            background-color: black; }
+                                            
 
+/*about page print queries*/
 
+@media print {
 
-
+    #aboutbody {
+        font-size: 12pt;
+        height: auto;
+        margin: 0;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
     }
+    blockquote{font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color:black;}
+
+    nav,
+    video,
+    .author-resume>a,
+    #authorheader h1,
+    .authorprofile .profilepicture
+        {display: none !important;}
+    
+        .print-education {
+            display: inline-flex;
+            
+            padding: 1rem;
+            text-align: left;
+}
+#aboutmain{ 
+    max-width: 95%;
+    margin: 1;
+    
+}
+#aboutmain p{font-family: 'Times New Roman', Times, serif;}
+.authorprofile h2 {text-align: center;
+                margin-top: 1;
+}
+.aboutfoot p {font-family: 'Times New Roman', Times, serif;}
+.aboutfoot  {font-family: 'Times New Roman', Times, serif;
+margin-bottom:0;}
 
 
+.authorname-heading2 {margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+@page{margin:1}
 
-
-
-
-
-
-
-
-
-
-
+}
