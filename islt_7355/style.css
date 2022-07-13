@@ -3,10 +3,11 @@
 
 /* Font styles*/
 
-blockquote{font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;}
 
+/* Lora  is also the different style that is applied 
+to  h1 for print query. 
+@font face is not included here because I linked
+ to the font and added the link to the head of the About page*/
 
 h1 {
     font-family: 'Lora', serif;
@@ -30,7 +31,18 @@ footer{
     flex-direction: column;
     text-align: center;
     margin-bottom: 3rem;
-}
+    width:100%;
+    min-height: 10rem;
+    background-image: url("images/footer-image.png");
+        background-size: cover;
+        }
+
+blockquote{font-family: 'Lato', sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;}
+
+/*email and phone icons on footer*/
+
 
 /*styles for index page*/
 
@@ -359,9 +371,15 @@ padding-top: 2rem;}
                                             background-color: black; }
                                             
 
-/*about page print queries*/
+/*print queries for about page*/
 
 @media print {
+
+    h1 {
+        font-family: 'Lora', serif;
+        text-align: center;
+        font-size: 3rem;
+        margin: 3rem 0rem 2rem;}
 
     #aboutbody {
         font-size: 12pt;
@@ -370,7 +388,7 @@ padding-top: 2rem;}
         color: black;
         font-family: 'Times New Roman', Times, serif;
     }
-    blockquote{font-family: 'Lato', sans-serif;
+    blockquote{font-family: 'Time New Romans', serif;
         font-size: 1.2rem;
         font-weight: bold;
         color:black;}
@@ -379,7 +397,9 @@ padding-top: 2rem;}
     video,
     .author-resume>a,
     #authorheader h1,
-    .authorprofile .profilepicture
+    .authorprofile .profilepicture,
+    #email,
+    #phone
         {display: none !important;}
     
         .print-education {
@@ -400,6 +420,8 @@ padding-top: 2rem;}
 .aboutfoot p {font-family: 'Times New Roman', Times, serif;}
 .aboutfoot  {font-family: 'Times New Roman', Times, serif;
 margin-bottom:0;}
+
+blockquote{ font-family: 'Times New Roman', Times, serif;}
 
 
 .authorname-heading2 {margin-top: 1rem;
