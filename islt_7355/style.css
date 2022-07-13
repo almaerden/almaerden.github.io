@@ -249,7 +249,7 @@ margin-left: 3rem;}
     .heading4goals { font-family: 'Open-Sans', sans-serif;}
 
 
-/* mediaquery about page*/
+/* media query about page*/
 .print-education {display: none;}
 
 video {
@@ -371,25 +371,33 @@ padding-top: 2rem;}
                                             background-color: black; }
                                             
 
-/*print queries for about page*/
+/*print set-up for about page*/
 
 @media print {
 
-    h1 {
+    * {
+        background: transparent;
+        color:black
+        }
+
+    h1 {   /*The element with different font-family in the about page for print*/
+
         font-family: 'Lora', serif;
         text-align: center;
-        font-size: 3rem;
-        margin: 3rem 0rem 2rem;}
+        font-size: 20pt;
+        /*margin: 3rem 0rem 2rem;}*/
+        margin-top: 0;
+        }
 
     #aboutbody {
-        font-size: 12pt;
+        font-size: 11pt;
         height: auto;
         margin: 0;
         color: black;
         font-family: 'Times New Roman', Times, serif;
     }
     blockquote{font-family: 'Time New Romans', serif;
-        font-size: 1.2rem;
+        font-size: 16pt;
         font-weight: bold;
         color:black;}
 
@@ -410,23 +418,26 @@ padding-top: 2rem;}
 }
 #aboutmain{ 
     max-width: 100%;
-    margin: 1;
+    margin: 0;
     
 }
 #aboutmain p{font-family: 'Times New Roman', Times, serif;}
-.authorprofile h2 {text-align: center;
-                margin-top: 1;
+.authorprofile {margin-top: 0;}
+h1 {text-align: center;
+                margin-top: 0px;
+                padding:0px;
 }
 .aboutfoot p {font-family: 'Times New Roman', Times, serif;}
 .aboutfoot  {font-family: 'Times New Roman', Times, serif;
-margin-bottom:0;}
+margin-bottom:0;
+margin-top: 0;}
 
 blockquote{ font-family: 'Times New Roman', Times, serif;}
 
 
-.authorname-heading2 {margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-@page{margin:1}
+/*.authorname-heading2 {margin-top: 1rem;}
+    margin-bottom: 2rem;*/
+
+@page{margin:1in}
 
 }
