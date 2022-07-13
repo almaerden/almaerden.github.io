@@ -41,7 +41,20 @@ blockquote{font-family: 'Lato', sans-serif;
             font-size: 1.2rem;
             font-weight: bold;}
 
-/*email and phone icons on footer*/
+/*animation for the phone and email icons in the footer*/
+
+#email{
+    transition: 0.5s linear; }
+
+#email:hover {
+    transform: scale(1.30);}
+#phone{
+    transition: 0.5s linear; }
+    
+#phone:hover {
+    transform: scale(1.35);}
+    
+
 
 
 /*styles for index page*/
