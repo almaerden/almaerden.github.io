@@ -64,7 +64,6 @@ blockquote{font-family: 'Lato', sans-serif;
 grid-template: 100%/100%;
 max-width: 55%;
 margin: 0 auto;
-;
 
 }
 
@@ -90,10 +89,17 @@ margin-bottom: 6rem;}
 /*styles for about page*/
 .print-education {display:none;}
 
-video {
-    width: 100%;
-   height: auto; 
-   padding: 5rem 0 0 2rem;  }
+.videoresume {
+    width: 80%;
+   height: 100%; 
+   padding: 1rem 0; 
+text-align: center; 
+background-color: #79ced4;
+margin-left: 5rem;
+margin-top: 3rem;}
+
+.video{width:90%;
+}
    
    #aboutmain{margin:0 10rem; 
    max-width: 60%;
@@ -128,7 +134,7 @@ video {
    font-weight: bold;
    text-align: center;
    margin-bottom: 5rem;
-   margin-top:5rem ;
+   margin-top:3rem ;
    }
    
    .aboutfoot{grid-row: 7/span1;
@@ -265,11 +271,19 @@ margin-left: 3rem;}
 /* media query about page*/
 .print-education {display: none;}
 
-video {
-    width: 70%;
-   height: auto; 
-   padding: rem 0 0rem 0rem;  }
-   
+.videoresume {
+    width: 90%;
+   height: 80%; 
+   margin-left: 0;
+ 
+ }
+   .video{
+    width: 90%;
+
+    height: 80%;
+    padding:1rem 1rem;
+    margin-left: 0;
+   }
    #aboutmain{margin:0 10rem; 
    min-width: 80%;
    margin: 0 auto;}
@@ -382,6 +396,25 @@ padding-top: 2rem;}
 #maincontainer-references p:first-child::first-letter {color: white;
                                             font-size: 3rem;
                                             background-color: black; }
+
+
+ 
+ @media only screen and (min-width: 571px) and (max-width: 1024px)  {
+ 
+ .videoresume {
+    width: 90%;
+   height: 80%; 
+   margin-left: 0;
+ 
+ }
+   .video{
+    width: 90%;
+
+    height: 80%;
+    padding:1rem 1rem;
+    margin-left: 0;}
+
+   }
                                             
 
 /*print set-up for about page*/
@@ -418,7 +451,8 @@ padding-top: 2rem;}
         color:black;}
 
     nav,
-    video,
+    .videoresume,
+    .video,
     .author-resume>a,
     #authorheader h1,
     .authorprofile .profilepicture,
@@ -447,7 +481,7 @@ h1 {text-align: center;
 .aboutfoot  {font-family: 'Times New Roman', Times, serif;
 margin-bottom:0;
 margin-top: 0;
-height:auto;
+height:40px;
 padding: 0;}
 
 blockquote{ font-family: 'Times New Roman', Times, serif;}
