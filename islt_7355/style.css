@@ -224,13 +224,14 @@ font-family:'Lora', serif;}
 
 .footermargin {margin-top: 5rem;
                 }
-#maincontainer-references p:first-child::first-letter {color: white;
+/*#maincontainer-references p:first-child::first-letter {color: white;
                                             font-size: 3rem;
                                             background-color: black;      
-                                         }  
+                                         }  */
 
+                                         
 
-                                               /* media query for mobile 570px*/
+/* media query for mobile 570px*/
 
 @media only screen and (max-width: 570px) {
 
@@ -424,9 +425,9 @@ padding-top: 2rem;}
 
 .footermargin {margin-top: 5rem;
                 }
-#maincontainer-references p:first-child::first-letter {color: white;
+/*#maincontainer-references p:first-child::first-letter {color: white;
                                             font-size: 3rem;
-                                            background-color: black; }
+                                            background-color: black; }*/
 }
 
 
@@ -524,4 +525,24 @@ blockquote{ font-family: 'Times New Roman', Times, serif;}
 
 @page{margin:1in;}
 
+}
+
+/*table style*/
+table{font-family: 'Open-Sans', sans-serif;
+width:70%
+}
+table, th, td{border:1px solid black;
+border-collapse: collapse;}
+thead{ background-color: rgb(125, 195, 202);}
+th, td{padding:10px;}
+caption{text-align: left;
+padding-bottom: 7px;
+font-weight: bold;}
+tbody tr:nth-child(odd) {background-color: rgb(201, 191, 191);}
+
+@media only screen and (max-width: 570px) {
+table{width:95%;
+}
+table th, td{font-size: 0.8rem;}
+    
 }
