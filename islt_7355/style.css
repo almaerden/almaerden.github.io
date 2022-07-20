@@ -35,6 +35,7 @@ footer{
     min-height: 10rem;
     background-image: url("images/footer-image.png");
         background-size: cover;
+    font-family: 'Open-Sans', sans-serif;
         }
 
 blockquote{font-family: 'Lato', sans-serif;
@@ -87,7 +88,10 @@ margin-bottom: 6rem;}
 .heading4goals { font-family: 'Open-Sans', sans-serif;}
 
 /*styles for about page*/
-.print-education {display:none;}
+/*.print-education {display:none;}*/
+
+.print-education{font-family:'Open-Sans', sans-serif;
+line-height: 1.9rem;}
 
 .videoresume {
     width: 80%;
@@ -229,6 +233,111 @@ font-family:'Lora', serif;}
                                             background-color: black;      
                                          }  */
 
+
+/* Contact Page style*/
+#contact-header {
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.form-content-container {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #F5E7AE;
+    margin: 0 auto;
+    border: 5px solid black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border-bottom: 1px solid black;
+    border-top: none;
+}
+
+.form-header {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5rem 0rem;
+    text-align: center;
+}
+
+.form-user-info,
+.form-user-message-area {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 2%;
+}
+
+.form-text {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input {
+    width: 98.7%;
+    height: 2.5rem;
+}
+
+textarea {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: .5%;
+
+}
+
+input,
+textarea {
+    margin: .5rem 0rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-user-message-area {
+    margin-bottom: 7%;
+
+}
+
+/*button {
+    position: relative;
+    top: 5%; */
+    
+    button{background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width:40%;
+    height:6rem;
+
+}
+.button-center{display:grid;
+    margin: auto;
+    width:50%;
+    height:7rem;
+    
+text-align: center;
+}
+
+form {
+    margin-bottom: 7rem;
+}
+@media only screen and (max-width: 570px)  {
+    .form-content-container {
+        width: 90%;}
+.form-header{font-size: 0.8rem;}
+    }
+    
                                          
 
 /* media query for mobile 570px*/
@@ -288,7 +397,7 @@ margin-left: 3rem;}
 
 
 /* media query about page*/
-.print-education {display: none;}
+/*.print-education {display: none;}*/
 
 .videoresume {
     width: 90%;
@@ -529,8 +638,9 @@ blockquote{ font-family: 'Times New Roman', Times, serif;}
 
 /*table style*/
 table{font-family: 'Open-Sans', sans-serif;
-width:70%
-}
+width:70%;}
+.centertable{margin-left: 6rem;}
+
 table, th, td{border:1px solid black;
 border-collapse: collapse;}
 thead{ background-color: rgb(125, 195, 202);}
@@ -541,8 +651,9 @@ font-weight: bold;}
 tbody tr:nth-child(odd) {background-color: rgb(201, 191, 191);}
 
 @media only screen and (max-width: 570px) {
-table{width:95%;
+table{width:90%;
 }
 table th, td{font-size: 0.8rem;}
+.centertable{margin: auto;}
     
 }
