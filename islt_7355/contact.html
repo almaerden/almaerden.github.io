@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"   type="text/css" href="nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!--favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<!--Font Family-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect"  type="text/css" href="https://fonts.gstatic.com" crossorigin>
+<link
+ href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400&display=swap"
+        rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,900&display=swap"
+        rel="stylesheet">
+
+<style>
+footer{background-image: url("images/footer-image.png");
+background-size: cover;
+font-family: 'Open Sans', sans-serif;
+}
+</style>
+<title>Contact Page</title>
+</head>
+
+<body>
+    <div id="navwrap">
+        
+        <nav id="navcontainer">
+            <label id="hamburger">&#9776;</label>
+            <ul>
+                <li class="active"> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="learn.html">Learn</a>
+                    <ul class="mobilehide">
+                        <li><a href="#learn1">Signs</a><li>
+                        <li><a href="#learn2">Sources</a></li>
+                        <li><a href="#learn3">Coping</a></li>
+                    </ul>
+                </li>
+                <li> <a href="references.html">References</a></li>
+                <li> <a href="#contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        </div>
+    <header id="contact-header">
+        <h1>Contact</h1>
+    </header>
+    
+    <main class="contact-form">
+        <form action="mailto:ae9hd@umsystem.edu?Subject=AE%20Website%20Contact%20" method="POST" enctype="text/plain">
+            <div class="form-content-container">
+                <div class="form-header">
+                    <h2>Contact Me</h2>
+                    <hr>
+                    ae9hd@umsystem.edu |
+                    +1-888-888-8888
+                </div>
+                <div class="form-user-info">
+                    <div class=" form-text input-name">
+                        <label for="first-name">Your First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name" name="name" required autofocus>
+                    </div>
+
+                    <div class="form-text">
+                        <label for="last-name">Your Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name" name="name" required>
+                    </div>
+                    <div class="form-text">
+                        <label for="email">Your Email</label> <input type="email" id="email"
+                            placeholder="example@example.com" name="email" value="" required>
+                    </div>
+                </div>
+                <div class="form-user-message-area">
+                    <div class="form-text">
+                        <label for="subject">Your Message Subject</label> <input type="text" id="subject"
+                            value="Educational Website Contact" name="subject" required>
+                    </div>
+
+                    <textarea name="message" rows="15" cols="47" class="form-control form-message "
+                        placeholder="Write your message here..." required></textarea>
+                      
+                   <div class="button-center"> <button type="submit" class="contact-btn btn" name="button">Send</button></div>
+                </div>
+            </div>
+        </form>
+
+    </main>
+        
+    <footer>
+        <div class="foot">
+          <p> Alma Erden <img src="images/email-icon.png" alt="email icon" id="email"><a href="emailto:ae9hd@umsytem.edu">  ae9hd@umsystem.edu</a>   
+        <img src="images/phone-icon.png" alt="images/phone-icon" id="phone">1+888-888-8888 </p></div>
+
+        <div>&copy;  Copyright Alma Erden 2022</div>   
+            
+    </footer>
+
+</body>
+</html>
