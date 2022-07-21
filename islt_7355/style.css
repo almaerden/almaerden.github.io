@@ -169,7 +169,7 @@ margin-top: 3rem;}
 
 #learnmain{ display: grid;
 grid-template: auto/auto;
-max-width: 50%;
+max-width: 45%;
 margin: 0 auto;
 }
 #learnmain p{ line-height: 1.9rem;
@@ -187,8 +187,11 @@ font-size: 1.8rem;}
 
 .image-center{padding-left: 3rem;
 margin-bottom: 5rem;}
+.learn11image{margin-left: 5.5rem;}
 
 .lineheight {line-height: 1.9rem;}
+.learn2heading2{text-align: center;}
+.ways2-center{ margin-left:3.5rem;}
 
 
 .learnfoot{
@@ -486,7 +489,7 @@ padding-left: 2rem;}
 
 .learn11image{ width:50%;
               height: auto;
-            margin-left: 4rem;}
+            margin-left: 6rem;}
 .learnfoot{
                 display: flex;
                 align-items: center;
@@ -639,13 +642,13 @@ blockquote{ font-family: 'Times New Roman', Times, serif;}
 /*table style*/
 table{font-family: 'Open-Sans', sans-serif;
 width:70%;}
-.centertable{margin-left: 6rem;}
+.centertable{margin-left: 6.5rem;}
 
 table, th, td{border:1px solid black;
 border-collapse: collapse;}
 thead{ background-color: rgb(125, 195, 202);}
 th, td{padding:10px;}
-caption{text-align: left;
+caption{text-align: center;
 padding-bottom: 7px;
 font-weight: bold;}
 tbody tr:nth-child(odd) {background-color: rgb(201, 191, 191);}
