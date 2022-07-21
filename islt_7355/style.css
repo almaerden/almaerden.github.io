@@ -44,10 +44,10 @@ blockquote{font-family: 'Lato', sans-serif;
 
 /*animation for the phone and email icons in the footer*/
 
-#email{
+#email-icon{
     transition: 0.5s linear; }
 
-#email:hover {
+#email-icon:hover {
     transform: scale(1.30);}
 #phone{
     transition: 0.5s linear; }
@@ -224,7 +224,7 @@ font-family:'Lora', serif;}
 #maincontainer-references { 
     display:grid;
     grid-area: auto/auto/auto/auto;
-    max-width: 55%;
+    max-width: 50%;
     margin: 0 auto;
     
      line-height: 1.9rem;
